@@ -53,13 +53,17 @@ def get_s3_data(context):
 @op
 def process_data():
     pass
+    # input: output of the get_s3_data function
+    # output: Aggregation
 
 
 @op
 def put_redis_data():
     pass
+    # needs to accept the Aggregation type from the process_data @op
 
 
 @job
 def week_1_pipeline():
     pass
+    # chain the ops together to make a linear pipeline
